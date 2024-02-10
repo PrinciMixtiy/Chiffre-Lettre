@@ -1,0 +1,19 @@
+Home:
+
+<Home>:
+    orientation: 'vertical'
+    TextInput:
+        size_hint: 1, None
+        height: '50dp'
+        multiline: False
+        id: chiffre_input
+        on_text_validate: root.valide_input(self)
+    Label:
+        text_size: root.width, None
+        size_hint: 1, 3
+        text: root.chiffre
+        font_name: "fonts/FiraCode.ttf"
+        font_size: "20dp"
+        color: .7, 1, .6, 1
+        halign: 'center'
+
