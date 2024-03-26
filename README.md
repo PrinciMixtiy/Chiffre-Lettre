@@ -1,5 +1,9 @@
 # Chiffre => Lettre
 
+Convertisseur Chiffre -> Lettre
+
+![Screenshot](assets/images/ch-lttr.png)
+
 ## For GUI
 
 - requirements:
@@ -7,15 +11,14 @@
   - kivy
 
 ```bash
-python main.py
+python main.py -d
 ```
 
-## From shell
+## For CLI
 
 - requirement:
   - python 3
 
 ```bash
-python ChLttrCls.py
+python translator.py [chiffre]
 ```
-

@@ -243,5 +243,4 @@ if __name__ == '__main__':
     import sys
     number = sys.argv[1]
     number = number.replace(',', '.').replace(' ', '')
-    print(number)
     print(f'{float(number)}: {translate(float(number))}')
