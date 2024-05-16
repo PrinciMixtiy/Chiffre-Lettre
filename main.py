@@ -1,7 +1,7 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import StringProperty
-from ChLttrCls import Chiffre
+from translator import translate
 
 
 class Home(BoxLayout):
@@ -12,7 +12,8 @@ class Home(BoxLayout):
         super(Home, self).__init__(**kwargs)
 
     def valide_input(self, widget):
-        self.chiffre = f"{widget.text}\n\n" + Chiffre(widget.text).lettre
+        number = widget.text.replace(',', '.').replace(' ', '')
+        self.chiffre = f"{widget.text}\n\n" + translate(float(number))
         widget.text = ''
 
 
